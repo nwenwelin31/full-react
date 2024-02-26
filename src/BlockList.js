@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 const BlockList = ({blogs, title, handleDelete}) => {
     // const blogs = props.blogs;
     // const title = props.title;
-    
+
   return (
     <div className='blog-list'>
     <h1>{title}</h1>
@@ -13,7 +13,6 @@ const BlockList = ({blogs, title, handleDelete}) => {
                 <Link to={`/blogs/${blog.id}`}>
                     <h2>{blog.title}</h2>
                     <p>Written by { blog.author }</p>
-                    <button onClick={() => handleDelete(blog.id)}>Delete blog</button>
                 </Link>
             </div>
         ))}
