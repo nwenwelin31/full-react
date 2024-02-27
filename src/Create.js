@@ -26,7 +26,7 @@ const Create = () => {
     <div className='create'>
         <h2>Add a new blog</h2>
         <form onSubmit={handleSubmit}>
-            <label>Block Title:</label>
+            <label>Blogb Title:</label>
             <input type='text' value={title} onChange={(e) => setTitle(e.target.value)} required/>
             <label>Blog Body:</label>
             <textarea value={body} onChange={(e) => setBody(e.target.value)} required></textarea>
