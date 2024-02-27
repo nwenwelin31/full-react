@@ -12,7 +12,7 @@ const Create = () => {
         e.preventDefault();
         const blog = {title, body, author};
         setIsPending(true);
-        fetch('http://localhost:3000/blogs',{
+        fetch('https://json-server-vercel-main-eta.vercel.app/blogs',{
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(blog)

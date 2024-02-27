@@ -5,10 +5,10 @@ import useFetch from './useFetch';
 const BlogDetails = () => {
     const {id} = useParams();
     //http://localhost:8000/blogs/
-    const {data:blog, error, isPending} = useFetch('http://localhost:3000/blogs/'+id);
+    const {data:blog, error, isPending} = useFetch('https://json-server-vercel-main-eta.vercel.app/blogs/'+id);
     const history = useHistory();
     const handleClick = () => {
-        fetch('http://localhost:3000/blogs/'+blog.id,{
+        fetch('https://json-server-vercel-main-eta.vercel.app/blogs/'+blog.id,{
             method: 'DELETE',
         }).then(() => {
             history.push('/');
