@@ -12,7 +12,7 @@ const Create = () => {
         e.preventDefault();
         const blog = {title, body, author};
         setIsPending(true);
-        fetch('https://react-blog-tawny-nu.vercel.app/blogs',{
+        fetch('http://localhost:3000/blogs',{
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(blog)

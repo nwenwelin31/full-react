@@ -5,10 +5,10 @@ import useFetch from './useFetch';
 const BlogDetails = () => {
     const {id} = useParams();
     //http://localhost:8000/blogs/
-    const {data:blog, error, isPending} = useFetch('https://react-blog-tawny-nu.vercel.app/blogs/'+id);
+    const {data:blog, error, isPending} = useFetch('http://localhost:3000/blogs/'+id);
     const history = useHistory();
     const handleClick = () => {
-        fetch('https://react-blog-tawny-nu.vercel.app/blogs/'+blog.id,{
+        fetch('http://localhost:3000/blogs/'+blog.id,{
             method: 'DELETE',
         }).then(() => {
             history.push('/');
