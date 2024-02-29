@@ -4,6 +4,7 @@ import Home from './Home';
 import Navbar from './Navbar';
 import BlogDetails from './BlogDetails';
 import NotFound from './NotFound';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

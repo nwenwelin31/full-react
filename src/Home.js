@@ -4,7 +4,7 @@ import useFetch from './useFetch';
 
 const Home = () => { 
 
-   const {data:blogs, isPending, error} = useFetch('https://json-server-vercel-main-eta.vercel.app/blogs');
+   const {data:blogs, isPending, error} = useFetch('https://json-server-snowy-pi.vercel.app/blogs');
     // const handleDelete = (id) => {
     //     const newBlog = blogs.filter((blog) => blog.id !== id);
     //     setData(newBlog);
